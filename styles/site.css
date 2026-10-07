@@ -187,3 +187,16 @@ img {
   }
 
 }
+
+@media (pointer: coarse) {
+  nav menu li a,
+  .button {
+    min-block-size: 48px;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
