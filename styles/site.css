@@ -1,0 +1,150 @@
+html {
+  font-family: 'Lucida Grande', 'Cantarell', 'Arial', sans-serif;
+  background-color: #cfcbbf;
+}
+
+body {
+  background-color: #efece5;
+  color: #000000;
+
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1 {
+  padding: 18px;
+  margin: 0;
+}
+
+header h1 {
+  background-color: #cfcbbf;
+}
+
+nav menu {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+}
+
+nav menu li {
+  list-style: none;
+}
+
+nav menu li a {
+  display: block;
+  padding: 16px 8px 16px 12px;
+
+  border-left: 8px solid #efece5;
+  color: black;
+
+  font-size: 140%;
+  text-decoration: none;
+}
+
+nav menu li a:hover {
+  border-left-color: #55bea9;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 160%;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+.left-image {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.logo img {
+  display: block;
+  margin: 24px auto;
+}
+
+.highlight-top {
+  padding: 20px;
+
+  color: white;
+  background-color: #f3633e;
+}
+
+.highlight-middle {
+  padding: 20px;
+
+  color: white;
+  background-color: #3e587e;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.events {
+  padding: 20px;
+}
+
+.readable {
+  padding: 4px 12px;
+
+  background-color: white;
+  color: rgb(47, 70, 108);
+}
+
+.fit-width {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  min-width: 400px;
+}
+
+.button {
+  display: block;
+  width: max-content;
+
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #55bea9;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+@media (min-width: 700px) {
+  header h1 {
+    background-color: transparent;
+  }
+
+  nav menu {
+    flex-direction: row;
+  }
+
+  nav menu li a {
+    padding: 10px 10px 10px 18px;
+    border-left: 0;
+    border-bottom: 8px solid #efece5;
+  }
+
+  nav menu li a:hover {
+    border-bottom-color: #55bea9;
+  }
+
+  .left-image {
+    flex-direction: row;
+    padding: 0 16px;
+    background-color: #ffffff;
+  }
+
+  .highlight-middle {
+    flex-direction: row;
+  }
+}
